@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
-    background-image: url(imagens/tile.png);
+    background-image: linear-gradient(transparent, red), url(imagens/tile.png);
+    background-attachment: fixed, scroll;
 }
 
 .cores {
@@ -24,4 +25,7 @@ section {
 
 .cores::before {
     content: "[ "counter(contador)" ]";
+    display: inline-block;
+    margin-bottom: 16px;
+    font-weight: bold;
 }
