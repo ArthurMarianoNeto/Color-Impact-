@@ -25,3 +25,13 @@ section {
 .cores::before {
     content: "[ "counter(contador)" ]";
 }
+.cores {
+    counter-increment: contador;
+}
+
+.cores::before {
+    content: "[ " counter(contador) " ]";
+    display: inline-block;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
